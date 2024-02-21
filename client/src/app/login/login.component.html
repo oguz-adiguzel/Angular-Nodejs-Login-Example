@@ -1,0 +1,16 @@
+<div class="container mx-auto h-screen flex flex-col items-center justify-center">
+    <div class="w-1/3 py-5 border bg-black text-white flex flex-col items-center border-black">
+        <h1 class="text-center text-2xl font-bold">Angular Login Example</h1>
+        <div class="flex flex-col items-center w-full mt-7">
+            <label for="username">Username</label>
+            <input [(ngModel)]="username" class="w-1/2 border text-black border-gray-400 py-1 px-3" type="text" id="username">
+        </div>
+        
+        <div class="flex flex-col items-center w-full mt-5">
+            <label for="password">Password</label>
+            <input [(ngModel)]="password" class="w-1/2 border py-1 px-3 text-black border-gray-400" type="password" id="password">
+        </div>
+
+        <button (click)="login()" class="bg-white mt-5 text-black px-2 py-1 rounded-sm">Login</button>
+    </div>
+</div>

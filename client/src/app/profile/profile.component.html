@@ -1,0 +1,6 @@
+<div class="w-full h-screen flex justify-center items-center">
+    <div class="w-1/6 px-10 py-20 bg-black">
+        <p class="text-white text-2xl font-bold" *ngIf="user && user.username">{{user.username}} ile giriş yapıldı</p>
+        <button (click)="logOut()" class="bg-white px-2 py-1 rounded-sm mt-5">Çıkış Yap</button>
+    </div>
+</div>
